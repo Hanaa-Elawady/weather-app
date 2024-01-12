@@ -150,9 +150,7 @@ function chartData(x){
     window.onload = getLocation;
 //////////location latitude & longitude
     function getLocation() {
-        if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showWeather);
-        }
       }
 
       function showWeather(position) {
