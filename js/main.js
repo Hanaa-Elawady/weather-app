@@ -152,8 +152,6 @@ function chartData(x){
     function getLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showWeather);
-        } else {
-          document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
         }
       }
 
