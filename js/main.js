@@ -28,12 +28,12 @@ async function displayData(){
         cartona+=`
         <div id="index${i}" class="carousel-item content${i+1} text-white pt-2">
             <div class="row">
-                <div class="col-3 pt-2">
+                <div class="col-md-3 pt-2">
                     <h1>${getWeekday(finalResponse.forecast.forecastday[i].date)}</h1>
                     <p class="mb-0">${finalResponse.forecast.forecastday[i].date}</p>
                     <p>${finalResponse.location.name} , ${finalResponse.location.country}</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <div>
                         <div ><img src="https:${finalResponse.forecast.forecastday[i].day.condition.icon}" alt="">${finalResponse.forecast.forecastday[i].day.condition.text}</div>
                         <div class="ms-auto">
@@ -44,12 +44,12 @@ async function displayData(){
                 </div>
             </div>
             <div class="row">
-                <div class="col-3 d-flex">
+                <div class="col-md-3 d-flex">
                     <div class="my-auto">
                         <h2 class="fs-1">${finalResponse.forecast.forecastday[i].day.avgtemp_c +" °C "}</h2>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="row border-top border-bottom">
                         ${getWeatherDuration(i)}
                     </div>
